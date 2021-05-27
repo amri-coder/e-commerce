@@ -3,7 +3,8 @@
 
 .product {
     cursor: pointer;
-    margin-bottom: 2rem;    
+    margin-bottom: 2rem; 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;   
 }
 .product img {
     transition: 0.3s all;
