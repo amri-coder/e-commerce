@@ -1,0 +1,58 @@
+
+/* --- Produits --- */
+
+.product {
+    cursor: pointer;
+    margin-bottom: 2rem;    
+}
+.product img {
+    transition: 0.3s all;
+}
+
+.product:hover img {
+    opacity: 0.7;
+}
+.product #buy-btn,.product .get-btn{
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+}
+.product:hover #buy-btn,.product:hover .get-btn{
+  
+    transform: translateY(0);
+    opacity: 1;
+   
+}
+
+.product .buy-btn,.product .get-btn{
+    background-color: #563D7C;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+    color: #FFE484;
+}
+.product:hover .buy-btn,.product:hover .get-btn{
+  
+    transform: translateY(0);
+    opacity: 1;
+   
+}
+hr {
+    height: 5px;
+    width: 50px;
+    background-color: #fb774b;
+}
+.star i {
+    font-size: 0.8rem;
+    color: goldenrod;
+}
+.product button {
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
