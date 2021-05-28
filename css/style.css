@@ -1,3 +1,72 @@
+/*-- General --*/
+#velos-homme::before, #velos-femme::before, #velos-enfant::before{
+    content: "";
+    display: block;
+    height: 1px; /* fixed header height*/
+    margin: -1px 0 0; /* negative fixed header height */
+}
+
+#header-top::before{
+    content: "";
+    display: block;
+    height: 66px;       
+}
+
+
+/*---- Navbar ---- */
+header #navbar-custom{
+    background-color: #563D7C;
+}
+
+#navbar-custom img:hover{
+    transform: rotate(-15deg);    
+}
+
+#navbar-custom .navbar-brand{
+    color: #FFE484;
+    font-size: 1.3em; 
+    font-weight: 400;   
+}
+
+#navbar-custom .nav-link{
+    color: #FFE484;
+}
+
+header .fa-shopping-cart{
+    background: #563D7C;
+    color: #FFE484;
+    transform: scale(2);
+}
+
+header .fa-shopping-cart:hover{    
+    transform: scale(2.1) rotate(-15deg);
+    color: #edbb15; 
+}
+
+.navbar-toggler-icon{
+    color: #FFE484;
+}
+
+.nav-item a{
+    background: #FFE484;    
+    border: 1px solid black;  
+}
+
+.nav-item a:hover{
+    background: #edbb15;
+    transform: scale(1.02);   
+}
+
+
+/* --- Tabs --- */
+
+.category{
+    display: none;
+}
+
+.category.displayed{
+    display: block;
+}
 
 /* --- Produits (les cards) --- */
 
@@ -15,11 +84,9 @@
     transition: 0.3s all;
 }
 
-.product:hover #buy-btn,.product:hover .get-btn{
-  
+.product:hover #buy-btn,.product:hover .get-btn{  
     transform: translateY(0);
-    opacity: 1;
-   
+    opacity: 1;   
 }
 
 .product .buy-btn,.product .get-btn{
@@ -124,3 +191,4 @@ a{
 .copyright{
     font-size: 0.8rem;
 }
+

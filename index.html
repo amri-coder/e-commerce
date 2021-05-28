@@ -25,6 +25,57 @@
 </head>
 
 <body>
+    <!-- Header -->
+    <header id="header-top">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top shadow" id="navbar-custom">
+            <!-- Container wrapper -->
+            <div class="container-fluid d-flex flex-wrap justify-content-between">
+                <!-- Navbar brand -->
+                <div class="brand order-2 order-md-1">                    
+                    <a class="navbar-brand mt-lg-0 fst-italic" href="#header-top"><img class="my-0" src="images/logo.png" alt="logo" height="50px" width="50px">Let's Bike!</a>
+                </div>
+
+                <!-- Toggle button -->
+                <div class="menu-burger order-1">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <!-- Collapsible wrapper -->
+                <div id="navbarNav" class="collapse navbar-collapse order-2 order-md-1">
+
+                    <!-- links -->
+                    <ul class="navbar-nav fs-4 me-auto mb-2 mb-lg-0 categories text-center">
+                        <li class="nav-item displayed my-1">
+                            <a class="btn btn ms-lg-5 mx-3 " href="#velos-homme">Vélos Homme</a>
+                        </li>
+                        <li class="nav-item my-1">
+                            <a class="btn btn mx-3" href="#velos-femme">Vélos Femme</a>
+                        </li>
+                        <li class="nav-item my-1">
+                            <a class="btn btn mx-3" href="#velos-enfant">Vélos Enfant</a>
+                        </li>
+                    </ul>
+                    <!-- links -->
+                </div>
+                <!-- Collapsible wrapper -->
+
+                <!-- Right elements -->
+                <div class="d-flex me-lg-3 order-1">
+                    <!-- Icon -->
+                    <a class="text-reset me-2 align-items-center" href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+                <!-- Right elements -->
+            </div>
+            <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar -->
+    </header class="mb-5">
 
     <!-- Carousel -->
     <section id="carousel">
@@ -62,14 +113,11 @@
             </div>
           </div>
     </section>
-
-
-
     <!-- Les cards Section -->
 
     <!-- Les cards Vélo pour Homme -->
-
-    <section id="homme" class="my-5 pb-5">
+    <main class="categories">
+    <section id="velos-homme" class="category displayed mb-5 pb-5">
 
         <div class="container text-center mt-5 py-5">
             <h2 class="text-uppercase fw-bold">HOMME</h2>
@@ -220,20 +268,11 @@
                 <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
             </div>
         </div>
-
-
-
-
     </section>
-
     <!-- Fin section Homme -->
 
-
     <!-- Début section Femme -->
-
-    
-
-     <section id="femme" class="my-5 pb-5">
+     <section id="velos-femme" class="category mb-5 pb-5">
 
         <div class="container text-center mt-5 py-5">
             <h2 class="text-uppercase fw-bold">FEMME</h2>
@@ -374,25 +413,11 @@
             </div>
         </div>
 
-
-
-
     </section>
-
-
-
-
-
     <!-- Fin section Femme -->
 
-
-
-    <!-- Section enfants-->
-
-    
-   
-
-     <section id="enfant" class="my-5 pb-5">
+    <!-- Section enfants-->   
+     <section id="velos-enfant" class="category mb-5 pb-5">
 
         <div class="container text-center mt-5 py-5">
             <h2 class="text-uppercase fw-bold">enfant</h2>
@@ -538,24 +563,12 @@
 
     </section>
 
-
-
-
-
-    <!-- Fin section Femme -->
-
-
     <!-- Fin section enfants-->
 
-
     <!-- Fin les cards -->
-
+    </main>
     
-
-        <!-- Les cards Section -->
-
-        <!-- Fin les cards -->
-
+    <aside>
         <!-- Comments section  -->
         <h2 class="text-center m-3 titre-avis"><strong>Ils ont RIDÉ OUR BIKES</strong> </h2>
         <hr class="mx-auto">
@@ -613,7 +626,7 @@
         </div>
         </div>
         <!-- Comments section -->
-    
+    </aside>
     <!-- Footer -->
     <footer class="pt-1 mt-5 text-white">
         <!-- Row section -->
