@@ -65,4 +65,7 @@ hr {
     *display:inline;
 
 }
+.p-price {
+    text-decoration:2px underline overline solid #FF0000;
+}
 
