@@ -1,5 +1,5 @@
 
-/* --- Produits --- */
+/* --- Produits (les cards) --- */
 
 .product {
     cursor: pointer;
@@ -70,3 +70,14 @@ hr {
     ;
 }
 
+#homme h2, #femme h2, #enfant h2 {
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: bold;
+}
+#homme h3, #femme h3, #enfant h3 {
+    font-family: 'Newsreader', serif;
+    font-weight: bold;
+}
+
+
+/***** Fin les cards ****/
