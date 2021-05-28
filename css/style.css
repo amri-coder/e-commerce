@@ -4,21 +4,17 @@
 .product {
     cursor: pointer;
     margin-bottom: 2rem; 
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
 }
 .product img {
     transition: 0.3s all;
-}
-
-.product:hover img {
-    opacity: 0.7;
 }
 .product #buy-btn,.product .get-btn{
     transform: translateY(20px);
     opacity: 0;
     transition: 0.3s all;
 }
-}
+
 .product:hover #buy-btn,.product:hover .get-btn{
   
     transform: translateY(0);
@@ -44,9 +40,13 @@ hr {
     width: 50px;
     background-color: #fb774b;
 }
-.star i {
-    font-size: 0.8rem;
+.star {
+    font-size: 0.9rem;
     color: goldenrod;
+}
+.star .star-1 {
+    font-size: 0.9rem;
+    color: #000;
 }
 .product button {
     font-size: 0.8rem;
@@ -57,3 +57,12 @@ hr {
     text-transform: uppercase;
     cursor: pointer;
 }
+.product .info-flex {
+    text-align: left;
+    display:-moz-inline-stack;
+    display:inline-block;
+    zoom:1;
+    *display:inline;
+
+}
+
