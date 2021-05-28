@@ -1,0 +1,43 @@
+/********Avis*******/
+.titre-avis{
+    color:#FFE484;
+}
+.comment-section{
+    align-items: center;
+}
+.comment-rate {
+    color: goldenrod;
+  }
+.image-david{
+    overflow: hidden;
+}
+.bg-1{
+    background-color: #cacaca;
+}
+.bg-2{
+    background-color:#f5f4ef;
+  
+}
+
+/*******************
+        FOOTER
+*******************/
+footer{
+    background-color: #563D7C;
+}
+footer i{
+    color: #FFE484;
+}
+a{
+    text-decoration: none;
+}
+.contact-flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+.copyright{
+    font-size: 0.8rem;
+}
