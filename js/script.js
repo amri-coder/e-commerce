@@ -246,3 +246,5 @@ displayCart();
 
 
 }
+
+//************************button passer la commande *********************//
