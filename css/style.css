@@ -213,6 +213,15 @@ a{
 /*
 #exampleModalBuy {
 
+/*******************
+        MODEL
+*******************/
+
+.costumized-modal{
+    background-color: #563D7C;
+    color: #FFE484;
 }
-*/
+.costumized-modal table{
+    color: #FFE484;
+}
 

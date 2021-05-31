@@ -143,13 +143,13 @@ function displayCart() {
         productContainer.innerHTML = '';
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += `              
-                <tr>
+                <tr class="text-center">
                     <td scope="row">${item.id}</th>
                     <td>${item.name}</td>
                     <td>${item.price}</td>
-                    <td>${parseInt(item.inCart)}</td>
-                    <td><button class="cartAddButton">+</button></td>
-                    <td><button class="cartRemoveButton">-</button></td>
+                    <td> ${parseInt(item.inCart)}</td>
+                    <td><button class="cartAddButton btn btn-outline-info btn-sm"><i class="fas fa-plus"></i></button></td>
+                    <td><button class="cartRemoveButton btn btn-outline-danger btn-sm"><i class="fas fa-minus"></i></button></td>
                     <td>${parseInt(item.inCart) * parseInt(item.price)}</td>
                 </tr>              
                 `;
@@ -157,9 +157,9 @@ function displayCart() {
 
         productContainer.innerHTML += `
             <tfoot>
-                <tr>
-                    <td colspan="4">TOTAL(€)</td>
-                    <td colspan="2">${parseInt(cartCost)}</td>
+                <tr class="fw-bold text-center">
+                    <td colspan="4">TOTAL</td>
+                    <td colspan="3">${parseInt(cartCost)}€</td>
                 </tr>
             </tfoot>       
         `;
