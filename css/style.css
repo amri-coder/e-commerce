@@ -34,14 +34,32 @@ header #navbar-custom{
 
 header .fa-shopping-cart{
     background: #563D7C;
-    color: #FFE484;
-    transform: scale(2);
+    color: #FFE484;  
+    transform: scale(1.4)
 }
 
-header .fa-shopping-cart:hover{    
-    transform: scale(2.1) rotate(-15deg);
-    color: #edbb15; 
+header .fa-shopping-cart:hover{
+    background: #563D7C;
+    color: #edbb15;  
+    transform: scale(1.7) rotate(-12deg);
 }
+
+header .cart{
+    background: #563D7C;
+    color: #FFE484;
+    transform: scale(1.4);
+}
+
+header .cart:hover{
+    background: #563D7C;
+    color: #edbb15;    
+}
+
+header .items-counter{   
+     
+    color:#FFE484;    
+}
+
 
 .navbar-toggler-icon{
     color: #FFE484;
@@ -190,4 +208,7 @@ a{
 .copyright{
     font-size: 0.8rem;
 }
+
+
+
 

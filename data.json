@@ -1,0 +1,150 @@
+[
+    {
+        "id": "0",
+        "name": "VÉLO DE MONTAGNE",
+        "category": "homme",
+        "description": "GUNAI Vélo de montagne électrique \n Vélo de ville 500W 26 \n Batterie cachée 48V et frein à disque",
+        "price": "322.00",
+        "inCart": "0"
+    },
+    {
+        "id": "1",
+        "name": "VÉLO DE VILLE",
+        "category": "homme",
+        "description": "Vélo de ville TOURING 28\" 6 vit \n Cadre et fourche acier  \n Homme noir 2019",
+        "price": "100.00",
+        "inCart": "0"
+    },
+    {
+        "id": "2",
+        "name": "VÉLO DE MONTAGNE",
+        "category": "homme",
+        "description": "GW20 750W 20''*4.0 VTT Pliant électrique \n Batterie au Lithium puissante 48V \n 7 vitesses, écran LCD multifonction",
+        "price": "322.00",
+        "inCart": "0"
+    },
+    {
+        "id": "3",
+        "name": "VÉLO TOIMSA",
+        "category": "homme",
+        "description": "TOIMSA Vélo 26, cadre acier \n 18 vitesses, Freins Vbrake \n Couleur noir, jaune",
+        "price": "119.00",
+        "inCart": "0"
+    },
+    {
+        "id": "4",
+        "name": "VÉLO ÉLECTRIQUE",
+        "category": "homme",
+        "description": "Vélo électriques vélo de Montagne 26 \n Pliant avec Batterie au Lithium 36V 8Ah \n Shimano à 21 vitesses",
+        "price": "499.00",
+        "inCart": "0"
+    },
+    {
+        "id": "5",
+        "name": "VÉLO VTT KS CYCLING",
+        "category": "homme",
+        "description": "VTT tout suspendu 26'' \n Topeka blanc-rouge TC 44 cm \n Jantes en aluminium",
+        "price": "281.00",
+        "inCart": "0"
+    },
+    {
+        "id": "6",
+        "name": "VÉLO 26'' VTC CITY",
+        "category": "femme",
+        "description": "Vélo 26'' VTC City, 6 Vitesses \n Dérailleur Shimano TY21, Equipement City avec panier \n Garde boue & porte bagages",
+        "price": "199.00",
+        "inCart": "0"
+    },
+    {
+        "id": "7",
+        "name": "VTC VÉLO DE VILLE",
+        "category": "femme",
+        "description": "BIKESTAR, VTC Vélo de ville, 28\" pouces \n 7 vitesse Shimano, Vélo urbain \n Vélo de Confort Retro, Marron",
+        "price": "337.90",
+        "inCart": "0"
+    },
+    {
+        "id": "8",
+        "name": "LUXUEUX VÉLO HOLLANDAIS",
+        "category": "femme",
+        "description": "Vélo De Ville 28\" pouces \n Luxueux Vélo style contemporain \n Jantes en aluminium",
+        "price": "216.99",
+        "inCart": "0"
+    },
+    {
+        "id": "9",
+        "name": "WINICE VÉLO ÉLECTRIQUE",
+        "category": "femme",
+        "description": "WINICE Vélo électrique pliant 20\" \n Vélo femmes 7 vitesses \n Moteur 250W avec Batterie au Lithium-ION 36V 8Ah",
+        "price": "849.99",
+        "inCart": "0"
+    },
+    {
+        "id": "10",
+        "name": "VÉLO MERCIER",
+        "category": "femme",
+        "description": "Vélo mercier 28’ Femme, ELANE \n Cadre Alu, autonomie 80 km \n Jante aluminium noir",
+        "price": "1129.99",
+        "inCart": "0"
+    },
+    {
+        "id": "11",
+        "name": "VÉLO CITY TREKKING",
+        "category": "femme",
+        "description": "BOJRD, Vélo City Trekking 26\" \n 21 V, Freins V-Brake \n Jantes alu",
+        "price": "1129.99",
+        "inCart": "0"
+    },
+    {
+        "id": "12",
+        "name": "VÉLO ENFANT",
+        "category": "enfant",
+        "description": "Vélo Enfant 14\" \n La Reine des Neiges 4/6 ans \n Classique, sans jante",
+        "price": "64.99",
+        "inCart": "0"
+    },
+    {
+        "id": "13",
+        "name": "SPIDERMAN VÉLO",
+        "category": "enfant",
+        "description": "Vélo enfant 14\", 4/7 ans \n Jante noir \n Couleur bleu et rouge",
+        "price": "119.99",
+        "inCart": "0"
+    },
+    {
+        "id": "14",
+        "name": "VÉLO VOLCANO",
+        "category": "enfant",
+        "description": "Vélo Volcano 14\" \n Frein avant Type Caliper \n Couleur rouge",
+        "price": "106.00",
+        "inCart": "0"
+    },
+    {
+        "id": "15",
+        "name": "VÉLO LA REINE DES NEIGES",
+        "category": "enfant",
+        "description": "LA REINE DES NEIGES Vélo 12\" \n Couleur bleu et blanc avec casque \n Jante aluminium",
+        "price": "100.99",
+        "inCart": "0"
+    },
+    {
+        "id": "16",
+        "name": "VÉLO AVENGERS",
+        "category": "enfant",
+        "description": "Vélo Avengers 12\" \n Disney Noir Marve \n Pneus gonflables",
+        "price": "100.99",
+        "inCart": "0"
+    },
+    {
+        "id": "17",
+        "name": "VÉLO PATROUILLE",
+        "category": "enfant",
+        "description": "Vélo enfant 10\" Pat Patrouille \n Equipé de 2 stabilisateurs amovible \n Plaque avant décorative",
+        "price": "86.00",
+        "inCart": "0"
+    }
+
+
+
+
+]

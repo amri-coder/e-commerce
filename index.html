@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
     <link rel="icon" href="images/icon/favi.png" />
-    <title>Let's Bike</title>
+    <title>Let's Bike - Home</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <!--Font style google-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@200&display=swap" rel="stylesheet"> 
-    
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@200&display=swap" rel="stylesheet">
+
     <!-- Mon fichier css-->
     <link rel="stylesheet" href="css/style.css">
 
@@ -32,8 +32,9 @@
             <!-- Container wrapper -->
             <div class="container-fluid d-flex flex-wrap justify-content-between">
                 <!-- Navbar brand -->
-                <div class="brand order-2 order-md-1">                    
-                    <a class="navbar-brand mt-lg-0 fst-italic" href="#header-top"><img class="my-0" src="images/logo.png" alt="logo" height="50px" width="50px">Let's Bike!</a>
+                <div class="brand order-2 order-md-1">
+                    <a class="navbar-brand mt-lg-0 fst-italic" href="#header-top"><img class="my-0"
+                            src="images/logo.png" alt="logo" height="50px" width="50px">Let's Bike!</a>
                 </div>
 
                 <!-- Toggle button -->
@@ -64,10 +65,10 @@
                 <!-- Collapsible wrapper -->
 
                 <!-- Right elements -->
-                <div class="d-flex me-lg-3 order-1">
+                <div class="cart d-flex me-lg-3 order-1">
                     <!-- Icon -->
-                    <a class="text-reset me-2 align-items-center" href="#">
-                        <i class="fas fa-shopping-cart"></i>
+                    <a href="#"><i class="fas fa-shopping-cart" data-bs-toggle="modal" data-bs-target="#exampleModal"></i><span
+                            class="items-counter ml-auto p-2">0</span>
                     </a>
                 </div>
                 <!-- Right elements -->
@@ -81,547 +82,569 @@
     <section id="carousel">
         <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/carousel/carousel1.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Grimpez au plus haut sommet</h5>
-                  <p></p>
+                <div class="carousel-item active">
+                    <img src="images/carousel/carousel1.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Grimpez au plus haut sommet</h5>
+                        <p></p>
+                    </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/carousel/carousel2.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Traversez sans effort</h5>
-                  <p></p>
+                <div class="carousel-item">
+                    <img src="images/carousel/carousel2.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Traversez sans effort</h5>
+                        <p></p>
+                    </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/carousel/carousel3.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Partagez un chemin</h5>
-                  <p></p>
+                <div class="carousel-item">
+                    <img src="images/carousel/carousel3.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Partagez un chemin</h5>
+                        <p></p>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
     </section>
     <!-- Les cards Section -->
 
     <!-- Les cards Vélo pour Homme -->
     <main class="categories">
-    <section id="velos-homme" class="category displayed mb-5 pb-5">
+        <section id="velos-homme" class="category displayed mb-5 pb-5">
 
-        <div class="container text-center mt-5 py-5">
-            <h2 class="text-uppercase fw-bold">HOMME</h2>
-            <hr class="mx-auto">
-            <h3>Ici, vous pouvez consulter les nouveaux produits à un prix équitable sur Let's Bike</h3>
-        </div>
-
-        <div class="row mx-auto container-fluid">
-
-            <div class="product text-center col-12 col-lg-4">
-                <img class="img-fluid mb-3" src="images/veloHomme/velo1.jpg" alt="velo1" title="GUNAI Vélo de montagne électrique" height="200" width="200">
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4 class="p-name fw-bold">VÉLO DE MONTAGNE</h4>
-                <ul class="info-flex">
-                    <li>
-                        GUNAI Vélo de montagne électrique
-                    </li>
-                    <li>
-                        Vélo de ville 500W 26"
-                    </li>
-                    <li>
-                        Batterie cachée 48V et frein à
-                    disque
-                    </li>
-                </ul>
-                <h5 class="p-price fw-bold">Prix : 322.00 €</h5>
-                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
-                <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
+            <div class="container text-center mt-5 py-5">
+                <h2 class="text-uppercase fw-bold">HOMME</h2>
+                <hr class="mx-auto">
+                <h3>Ici, vous pouvez consulter les nouveaux produits à un prix équitable sur Let's Bike</h3>
             </div>
 
+            <div class="row mx-auto container-fluid">
 
-
-            <div class="product col-12 col-lg-4 text-center">
-               
-               
-                <img class="img-fluid mb-3" src="images/veloHomme/velo2.jpg" alt="velo2" title="Vélo de ville touring" height="200" width="200">
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span class="star-1"><i class="fas fa-star"></i></span>
-                    <span class="star-1"><i class="fas fa-star"></i></span>
+                <div id="0" class="product text-center col-12 col-lg-4">
+                    <img class="img-fluid mb-3" src="images/veloHomme/velo1.jpg" alt="velo1"
+                        title="GUNAI Vélo de montagne électrique" height="200" width="200">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="p-name fw-bold">VÉLO DE MONTAGNE</h4>
+                    <ul class="info-flex">
+                        <li>
+                            GUNAI Vélo de montagne électrique
+                        </li>
+                        <li>
+                            Vélo de ville 500W 26"
+                        </li>
+                        <li>
+                            Batterie cachée 48V et frein à
+                            disque
+                        </li>
+                    </ul>
+                    <h5 class="p-price fw-bold">Prix : 322.00 €</h5>
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
                 </div>
-                <h4 class="p-name fw-bold">VÉLO DE VILLE</h4>
-                <ul class="info-flex">
-                    <li>Vélo de ville TOURING 28" 6 vit</li>
-                    <li>Cadre et fourche acier </li>
-                    <li>Homme noir 2019</li>
-                </ul>
-               
-                <h5 class="p-price fw-bold">Prix : 100.00 €</h5>
-                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
-                <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
+
+
+
+                <div id="1" class="product col-12 col-lg-4 text-center">
+
+
+                    <img class="img-fluid mb-3" src="images/veloHomme/velo2.jpg" alt="velo2"
+                        title="Vélo de ville touring" height="200" width="200">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="star-1"><i class="fas fa-star"></i></span>
+                        <span class="star-1"><i class="fas fa-star"></i></span>
+                    </div>
+                    <h4 class="p-name fw-bold">VÉLO DE VILLE</h4>
+                    <ul class="info-flex">
+                        <li>Vélo de ville TOURING 28" 6 vit</li>
+                        <li>Cadre et fourche acier </li>
+                        <li>Homme noir 2019</li>
+                    </ul>
+
+                    <h5 class="p-price fw-bold">Prix : 100.00 €</h5>
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
+                </div>
+
+
+
+
+
+                <div id="2" class="product text-center col-12 col-lg-4">
+                    <img class="img-fluid mb-3" src="images/veloHomme/velo3.jpg" alt="velo3"
+                        title="VTT Pliant électrique" height="200" width="200">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="star-1"><i class="fas fa-star"></i></span>
+                    </div>
+                    <h4 class="p-name fw-bold">VÉLO DE MONTAGNE</h4>
+
+                    <ul class="info-flex">
+                        <li>GW20 750W 20''*4.0 VTT Pliant électrique</li>
+                        <li>Batterie au Lithium puissante 48V</li>
+                        <li>7 vitesses, écran LCD multifonction</li>
+                    </ul>
+
+                    <h5 class="p-price fw-bold">Prix : 250.00 €</h5>
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
+                </div>
+
+
+                <div id="3" class="product text-center col-12 col-lg-4">
+                    <img class="img-fluid mb-3" src="images/veloHomme/velo4.jpg" alt="velo4" title="TOIMSA Vélo 26"
+                        height="200" width="200">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="star-1"><i class="fas fa-star"></i></span>
+                    </div>
+                    <h4 class="p-name fw-bold">VÉLO TOIMSA</h4>
+
+                    <ul class="info-flex">
+                        <li>TOIMSA Vélo 26", cadre acier</li>
+                        <li>18 vitesses, Freins Vbrake</li>
+                        <li>Couleur noir, jaune</li>
+                    </ul>
+
+                    <h5 class="p-price fw-bold">Prix : 119.00 €</h5>
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
+                </div>
+
+                <div id="4" class="product text-center col-12 col-lg-4">
+                    <img class="img-fluid mb-3" src="images/veloHomme/velo5.jpg" alt="velo5"
+                        title="Vélo électriques vélo de Montagne" height="200" width="200">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="star-1"> <i class="fas fa-star"></i></span>
+                        <span class="star-1"> <i class="fas fa-star"></i></span>
+                    </div>
+                    <h4 class="p-name fw-bold">VÉLO ÉLECTRIQUE</h4>
+                    <ul class="info-flex">
+                        <li>Vélo électriques vélo de Montagne 26"</li>
+                        <li>Pliant avec Batterie au Lithium 36V 8Ah</li>
+                        <li>Shimano à 21 vitesses</li>
+                    </ul>
+                    <h5 class="p-price fw-bold">Prix : 499.00 €</h5>
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
+                </div>
+
+                <div id="5" class="product text-center col-12 col-lg-4">
+                    <img class="img-fluid mb-3" src="images/veloHomme/velo6.jpg" alt="velo6" title="VTT KS Cycling"
+                        height="200" width="200">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="star-1"> <i class="fas fa-star"></i></span>
+                    </div>
+                    <h4 class="p-name fw-bold">VÉLO VTT KS CYCLING</h4>
+                    <ul class="info-flex">
+                        <li>VTT tout suspendu 26''</li>
+                        <li>Topeka blanc-rouge TC 44 cm</li>
+                        <li>Jantes en aluminium</li>
+                    </ul>
+                    <h5 class="p-price fw-bold">Prix : 281.00 €</h5>
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
+                </div>
             </div>
-        
-         
+        </section>
+        <!-- Fin section Homme -->
 
+        <!-- Début section Femme -->
+        <section id="velos-femme" class="category mb-5 pb-5">
 
-
-            <div class="product text-center col-12 col-lg-4">
-                <img class="img-fluid mb-3" src="images/veloHomme/velo3.jpg" alt="velo3" title="VTT Pliant électrique" height="200" width="200">
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span class="star-1"><i class="fas fa-star"></i></span>
-                </div>
-                <h4 class="p-name fw-bold">VÉLO DE MONTAGNE</h4>
-
-                <ul class="info-flex">
-                    <li>GW20 750W 20''*4.0 VTT Pliant électrique</li>
-                    <li>Batterie au Lithium puissante 48V</li>
-                    <li>7 vitesses, écran LCD multifonction</li>
-                </ul>
-                
-                <h5 class="p-price fw-bold">Prix : 250.00 €</h5>
-                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
-                <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
-            </div>
-
-
-            <div class="product text-center col-12 col-lg-4">
-                <img class="img-fluid mb-3" src="images/veloHomme/velo4.jpg" alt="velo4" title="TOIMSA Vélo 26" height="200" width="200">
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span class="star-1"><i class="fas fa-star"></i></span>
-                </div>
-                <h4 class="p-name fw-bold">VÉLO TOIMSA</h4>
-
-                <ul class="info-flex">
-                    <li>TOIMSA Vélo 26", cadre acier</li>
-                    <li>18 vitesses, Freins Vbrake</li>
-                    <li>Couleur noir, jaune</li>
-                </ul>
-              
-                <h5 class="p-price fw-bold">Prix : 119.00 €</h5>
-                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
-                <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
-            </div>
-
-            <div class="product text-center col-12 col-lg-4">
-                <img class="img-fluid mb-3" src="images/veloHomme/velo5.jpg" alt="velo5" title="Vélo électriques vélo de Montagne" height="200" width="200">
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span class="star-1"> <i class="fas fa-star"></i></span>
-                    <span class="star-1"> <i class="fas fa-star"></i></span>
-                </div>
-                <h4 class="p-name fw-bold">VÉLO ÉLECTRIQUE</h4>
-                <ul class="info-flex">
-                    <li>Vélo électriques vélo de Montagne 26"</li>
-                    <li>Pliant avec Batterie au Lithium 36V 8Ah</li>
-                    <li>Shimano à 21 vitesses</li>
-                </ul>
-                <h5 class="p-price fw-bold">Prix : 499.00 €</h5>
-                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
-                <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
-            </div>
-
-            <div class="product text-center col-12 col-lg-4">
-                <img class="img-fluid mb-3" src="images/veloHomme/velo6.jpg" alt="velo6" title="VTT KS Cycling" height="200" width="200">
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span class="star-1"> <i class="fas fa-star"></i></span>
-                </div>
-                <h4 class="p-name fw-bold">VÉLO VTT KS CYCLING</h4>
-                <ul class="info-flex">
-                    <li>VTT tout suspendu 26''</li>
-                    <li>Topeka blanc-rouge TC 44 cm</li>
-                    <li>Jantes en aluminium</li>
-                </ul>
-                <h5 class="p-price fw-bold">Prix : 281.00 €</h5>
-                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
-                <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
-            </div>
-        </div>
-    </section>
-    <!-- Fin section Homme -->
-
-    <!-- Début section Femme -->
-     <section id="velos-femme" class="category mb-5 pb-5">
-
-        <div class="container text-center mt-5 py-5">
-            <h2 class="text-uppercase fw-bold">FEMME</h2>
-            <hr class="mx-auto">
-            <h3>Ici, vous pouvez consulter les nouveaux produits à un prix équitable sur Let's Bike</h3>
-        </div>
-
-        <div class="row mx-auto container-fluid">
-
-            <div class="product text-center col-12 col-lg-4">
-                <img class="img-fluid mb-3" src="images/veloFemme/velo1.jpg" alt="velo1" title="Vélo 26'' VTC City" height="200" width="200">
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span class="star-1"><i class="fas fa-star"></i></span>
-                </div>
-                <h4 class="p-name fw-bold text-uppercase">Vélo 26'' VTC City</h4>
-                <ul class="info-flex">
-                    <li>Vélo 26'' VTC City, 6 Vitesses</li>
-                    <li>Dérailleur Shimano TY21, Equipement City avec panier</li>
-                    <li>Garde boue & porte bagages</li>
-                </ul>
-
-                <h5 class="p-price fw-bold">Prix : 199.90 €</h5>
-                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
-                <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
-            </div>
-
-
-
-            <div class="product text-center col-12 col-lg-4">
-                <img class="img-fluid mb-3" src="images/veloFemme/velo2.jpg" alt="velo2" title="VTC Vélo de ville" height="200" width="200">
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span class="star-1"><i class="fas fa-star"></i></span>
-                </div>
-                <h4 class="p-name fw-bold text-uppercase">VTC Vélo de ville</h4>
-                <ul class="info-flex">
-                    <li>BIKESTAR, VTC Vélo de ville, 28" pouces</li>
-                    <li>7 vitesse Shimano, Vélo urbain</li>
-                    <li>Vélo de Confort Retro, Marron</li>
-                </ul>
-                <h5 class="p-price fw-bold">Prix : 337.90 €</h5>
-                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
-                <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
+            <div class="container text-center mt-5 py-5">
+                <h2 class="text-uppercase fw-bold">FEMME</h2>
+                <hr class="mx-auto">
+                <h3>Ici, vous pouvez consulter les nouveaux produits à un prix équitable sur Let's Bike</h3>
             </div>
 
+            <div class="row mx-auto container-fluid">
 
+                <div id="6" class="product text-center col-12 col-lg-4">
+                    <img class="img-fluid mb-3" src="images/veloFemme/velo1.jpg" alt="velo1" title="Vélo 26'' VTC City"
+                        height="200" width="200">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="star-1"><i class="fas fa-star"></i></span>
+                    </div>
+                    <h4 class="p-name fw-bold text-uppercase">Vélo 26'' VTC City</h4>
+                    <ul class="info-flex">
+                        <li>Vélo 26'' VTC City, 6 Vitesses</li>
+                        <li>Dérailleur Shimano TY21, Equipement City avec panier</li>
+                        <li>Garde boue & porte bagages</li>
+                    </ul>
 
-            <div class="product text-center col-12 col-lg-4">
-                <img class="img-fluid mb-3" src="images/veloFemme/velo3.jpg" alt="velo3" title="Luxueux Vélo hollandais" height="200" width="200">
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                    <h5 class="p-price fw-bold">Prix : 199.90 €</h5>
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
                 </div>
-                <h4 class="p-name fw-bold text-uppercase">Luxueux Vélo hollandais</h4>
-                <ul class="info-flex">
-                    <li>Vélo De Ville 28"</li>
-                    <li>Luxueux Vélo style contemporain</li>
-                    <li>Jantes en aluminium</li>
-                </ul>
-              
-                <h5 class="p-price fw-bold">Prix : 216.99 €</h5>
-                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
-                <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
+
+
+
+                <div id="7" class="product text-center col-12 col-lg-4">
+                    <img class="img-fluid mb-3" src="images/veloFemme/velo2.jpg" alt="velo2" title="VTC Vélo de ville"
+                        height="200" width="200">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="star-1"><i class="fas fa-star"></i></span>
+                    </div>
+                    <h4 class="p-name fw-bold text-uppercase">VTC Vélo de ville</h4>
+                    <ul class="info-flex">
+                        <li>BIKESTAR, VTC Vélo de ville, 28" pouces</li>
+                        <li>7 vitesse Shimano, Vélo urbain</li>
+                        <li>Vélo de Confort Retro, Marron</li>
+                    </ul>
+                    <h5 class="p-price fw-bold">Prix : 337.90 €</h5>
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
+                </div>
+
+
+
+                <div id="8" class="product text-center col-12 col-lg-4">
+                    <img class="img-fluid mb-3" src="images/veloFemme/velo3.jpg" alt="velo3"
+                        title="Luxueux Vélo hollandais" height="200" width="200">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="p-name fw-bold text-uppercase">Luxueux Vélo hollandais</h4>
+                    <ul class="info-flex">
+                        <li>Vélo De Ville 28"</li>
+                        <li>Luxueux Vélo style contemporain</li>
+                        <li>Jantes en aluminium</li>
+                    </ul>
+
+                    <h5 class="p-price fw-bold">Prix : 216.99 €</h5>
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
+                </div>
+
+
+                <div id="9" class="product text-center col-12 col-lg-4">
+                    <img class="img-fluid mb-3" src="images/veloFemme/velo4.jpg" alt="velo4"
+                        title="WINICE Vélo électrique" height="200" width="200">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="p-name fw-bold text-uppercase">WINICE Vélo électrique</h4>
+                    <ul class="info-flex">
+                        <li>WINICE Vélo électrique pliant 20"</li>
+                        <li>Vélo femmes 7 vitesses</li>
+                        <li>Moteur 250W avec Batterie au Lithium-ION 36V 8Ah</li>
+                    </ul>
+
+                    <h5 class="p-price fw-bold">Prix : 849.99 €</h5>
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
+                </div>
+
+                <div id="10" class="product text-center col-12 col-lg-4">
+                    <img class="img-fluid mb-3" src="images/veloFemme/velo5.jpg" alt="velo5" title="Vélo mercier"
+                        height="200" width="200">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="p-name fw-bold text-uppercase">Vélo mercier</h4>
+                    <ul>
+                        <li>Vélo mercier 28’ Femme, ELANE</li>
+                        <li>Cadre Alu, autonomie 80 km</li>
+                        <li>Jante aluminium noir</li>
+                    </ul>
+
+                    <h5 class="p-price fw-bold">Prix : 1129.99 €</h5>
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
+                </div>
+
+                <div id="11" class="product text-center col-12 col-lg-4">
+                    <img class="img-fluid mb-3" src="images/veloFemme/velo6.jpg" alt="velo6" title="Vélo City Trekking"
+                        height="200" width="200">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="star-1"> <i class="fas fa-star"></i></span>
+                        <span class="star-1"> <i class="fas fa-star"></i></span>
+                        <span class="star-1"> <i class="fas fa-star"></i></span>
+                    </div>
+                    <h4 class="p-name fw-bold text-uppercase">Vélo City Trekking</h4>
+                    <ul class="info-flex">
+                        <li>BOJRD, Vélo City Trekking 26"</li>
+                        <li>21 V, Freins V-Brake</li>
+                        <li>Jantes alu</li>
+                    </ul>
+
+                    <h5 class="p-price fw-bold">Prix : 181.00 €</h5>
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
+                </div>
             </div>
 
+        </section>
+        <!-- Fin section Femme -->
 
-            <div class="product text-center col-12 col-lg-4">
-                <img class="img-fluid mb-3" src="images/veloFemme/velo4.jpg" alt="velo4" title="WINICE Vélo électrique" height="200" width="200">
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4 class="p-name fw-bold text-uppercase">WINICE Vélo électrique</h4>
-                <ul class="info-flex">
-                    <li>WINICE Vélo électrique pliant 20"</li>
-                    <li>Vélo femmes 7 vitesses</li>
-                    <li>Moteur 250W avec Batterie au Lithium-ION 36V 8Ah</li>
-                </ul>
-                
-                <h5 class="p-price fw-bold">Prix : 849.99 €</h5>
-                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
-                <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
+        <!-- Section enfants-->
+        <section id="velos-enfant" class="category mb-5 pb-5">
+
+            <div class="container text-center mt-5 py-5">
+                <h2 class="text-uppercase fw-bold">enfant</h2>
+                <hr class="mx-auto">
+                <h3>Ici, vous pouvez consulter les nouveaux produits à un prix équitable sur Let's Bike</h3>
             </div>
 
-            <div class="product text-center col-12 col-lg-4">
-                <img class="img-fluid mb-3" src="images/veloFemme/velo5.jpg" alt="velo5" title="Vélo mercier" height="200" width="200">
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+            <div class="row mx-auto container-fluid">
+
+                <div id="12" class="product text-center col-12 col-lg-4">
+                    <img class="img-fluid mb-3" src="images/veloEnfant/velo1.jpg" alt="velo1" title="Vélo Enfant"
+                        height="200" width="200">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="star-1"> <i class="fas fa-star"></i></span>
+                    </div>
+                    <h4 class="p-name fw-bold text-uppercase">Vélo Enfant</h4>
+                    <ul class="info-flex">
+                        <li>Vélo Enfant 14"</li>
+                        <li>La Reine des Neiges 4/6 ans</li>
+                        <li>Classique, sans jante</li>
+                    </ul>
+                    <h5 class="p-price fw-bold">Prix : 64.99 €</h5>
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
                 </div>
-                <h4 class="p-name fw-bold text-uppercase">Vélo mercier</h4>
-                <ul>
-                    <li>Vélo mercier 28’ Femme, ELANE</li>
-                    <li>Cadre Alu, autonomie 80 km</li>
-                    <li>Jante aluminium noir</li>
-                </ul>
-                
-                <h5 class="p-price fw-bold">Prix : 1129.99 €</h5>
-                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
-                <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
+
+
+
+                <div id="13" class="product text-center col-12 col-lg-4">
+                    <img class="img-fluid mb-3" src="images/veloEnfant/velo2.jpg" alt="velo2" title="SPIDERMAN Vélo"
+                        height="200" width="200">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="star-1"> <i class="fas fa-star"></i></span>
+                        <span class="star-1"> <i class="fas fa-star"></i></span>
+                    </div>
+                    <h4 class="p-name fw-bold text-uppercase">SPIDERMAN Vélo</h4>
+                    <ul class="info-flex">
+                        <li>Vélo enfant 14", 4/7 ans</li>
+                        <li>Jante noir</li>
+                        <li>Couleur bleu et rouge</li>
+                    </ul>
+
+                    <h5 class="p-price fw-bold">Prix : 119.99 €</h5>
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
+                </div>
+
+
+
+                <div id="14" class="product text-center col-12 col-lg-4">
+                    <img class="img-fluid mb-3" src="images/veloEnfant/velo3.jpg" alt="velo3" title="Vélo Volcano"
+                        height="200" width="200">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="p-name fw-bold text-uppercase">Vélo Volcano</h4>
+                    <ul class="info-flex">
+                        <li>Vélo Volcano 14"</li>
+                        <li>Frein avant Type Caliper</li>
+                        <li>Couleur rouge</li>
+                    </ul>
+
+                    <h5 class="p-price fw-bold">Prix : 106.00 €</h5>
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
+                </div>
+
+
+                <div id="15" class="product text-center col-12 col-lg-4">
+                    <img class="img-fluid mb-3" src="images/veloEnfant/velo4.jpg" alt="velo4"
+                        title="LA REINE DES NEIGES Vélo" height="200" width="200">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="p-name fw-bold text-uppercase">Vélo LA REINE DES NEIGES</h4>
+                    <ul class="info-flex">
+                        <li>LA REINE DES NEIGES Vélo 12"</li>
+                        <li>Couleur bleu et blanc avec casque</li>
+                        <li>Jante aluminium</li>
+                    </ul>
+
+                    <h5 class="p-price fw-bold">Prix : 100.99 €</h5>
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
+                </div>
+
+                <div id="16" class="product text-center col-12 col-lg-4">
+                    <img class="img-fluid mb-3" src="images/veloEnfant/velo5.jpg" alt="velo5" title="Vélo Avengers"
+                        height="200" width="200">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="star-1"> <i class="fas fa-star"></i></span>
+                    </div>
+                    <h4 class="p-name fw-bold text-uppercase">Vélo Avengers</h4>
+                    <ul class="info-flex">
+                        <li>Vélo Avengers 12"</li>
+                        <li>Disney Noir Marve</li>
+                        <li>Pneus gonflables</li>
+                    </ul>
+
+                    <h5 class="p-price fw-bold">Prix : 89.90 €</h5>
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
+                </div>
+
+                <div id="17" class="product text-center col-12 col-lg-4">
+                    <img class="img-fluid mb-3" src="images/veloEnfant/velo6.jpg" alt="velo6" title="Vélo Patrouille"
+                        height="200" width="200">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="star-1"> <i class="fas fa-star"></i></span>
+                        <span class="star-1"> <i class="fas fa-star"></i></span>
+                    </div>
+                    <h4 class="p-name fw-bold text-uppercase">Vélo Patrouille</h4>
+                    <ul class="info-flex">
+                        <li>Vélo enfant 10" Pat Patrouille</li>
+                        <li>Equipé de 2 stabilisateurs amovible</li>
+                        <li>Plaque avant décorative</li>
+                    </ul>
+
+                    <h5 class="p-price fw-bold">Prix : 86.00 €</h5>
+                    <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
+                </div>
             </div>
 
-            <div class="product text-center col-12 col-lg-4">
-                <img class="img-fluid mb-3" src="images/veloFemme/velo6.jpg" alt="velo6" title="Vélo City Trekking" height="200" width="200">
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span class="star-1">  <i class="fas fa-star"></i></span>
-                    <span class="star-1"> <i class="fas fa-star"></i></span>
-                    <span class="star-1">  <i class="fas fa-star"></i></span>
-                </div>
-                <h4 class="p-name fw-bold text-uppercase">Vélo City Trekking</h4>
-                <ul class="info-flex">
-                    <li>BOJRD, Vélo City Trekking 26"</li>
-                    <li>21 V, Freins V-Brake</li>
-                    <li>Jantes alu</li>
-                </ul>
-               
-                <h5 class="p-price fw-bold">Prix : 181.00 €</h5>
-                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
-                <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
-            </div>
-        </div>
+        </section>
 
-    </section>
-    <!-- Fin section Femme -->
+        <!-- Fin section enfants-->
 
-    <!-- Section enfants-->   
-     <section id="velos-enfant" class="category mb-5 pb-5">
-
-        <div class="container text-center mt-5 py-5">
-            <h2 class="text-uppercase fw-bold">enfant</h2>
-            <hr class="mx-auto">
-            <h3>Ici, vous pouvez consulter les nouveaux produits à un prix équitable sur Let's Bike</h3>
-        </div>
-
-        <div class="row mx-auto container-fluid">
-
-            <div class="product text-center col-12 col-lg-4">
-                <img class="img-fluid mb-3" src="images/veloEnfant/velo1.jpg" alt="velo1" title="Vélo Enfant" height="200" width="200">
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span class="star-1">  <i class="fas fa-star"></i></span>
-                </div>
-                <h4 class="p-name fw-bold text-uppercase">Vélo Enfant</h4>
-                <ul class="info-flex">
-                    <li>Vélo Enfant 14"</li>
-                    <li>La Reine des Neiges 4/6 ans</li>
-                    <li>Classique, sans jante</li>
-                </ul>
-                <h5 class="p-price fw-bold">Prix : 64.99 €</h5>
-                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
-                <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
-            </div>
-
-
-
-            <div class="product text-center col-12 col-lg-4">
-                <img class="img-fluid mb-3" src="images/veloEnfant/velo2.jpg" alt="velo2" title="SPIDERMAN Vélo" height="200" width="200">
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span class="star-1">    <i class="fas fa-star"></i></span>
-                    <span class="star-1">  <i class="fas fa-star"></i></span>
-                </div>
-                <h4 class="p-name fw-bold text-uppercase">SPIDERMAN Vélo</h4>
-                <ul class="info-flex">
-                    <li>Vélo enfant 14", 4/7 ans</li>
-                    <li>Jante noir</li>
-                    <li>Couleur bleu et rouge</li>
-                </ul>
-               
-                <h5 class="p-price fw-bold">Prix : 119.99 €</h5>
-                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
-                <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
-            </div>
-
-
-
-            <div class="product text-center col-12 col-lg-4">
-                <img class="img-fluid mb-3" src="images/veloEnfant/velo3.jpg" alt="velo3" title="Vélo Volcano" height="200" width="200">
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4 class="p-name fw-bold text-uppercase">Vélo Volcano</h4>
-                <ul class="info-flex">
-                    <li>Vélo Volcano 14"</li>
-                    <li>Frein avant Type Caliper</li>
-                    <li>Couleur rouge</li>
-                </ul>
-               
-                <h5 class="p-price fw-bold">Prix : 106.00 €</h5>
-                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
-                <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
-            </div>
-
-
-            <div class="product text-center col-12 col-lg-4">
-                <img class="img-fluid mb-3" src="images/veloEnfant/velo4.jpg" alt="velo4" title="LA REINE DES NEIGES Vélo" height="200" width="200">
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h4 class="p-name fw-bold text-uppercase">Vélo LA REINE DES NEIGES</h4>
-                <ul class="info-flex">
-                    <li>LA REINE DES NEIGES Vélo 12"</li>
-                    <li>Couleur bleu et blanc avec casque</li>
-                    <li>Jante aluminium</li>
-                </ul>
-               
-                <h5 class="p-price fw-bold">Prix : 100.99 €</h5>
-                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
-                <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
-            </div>
-
-            <div class="product text-center col-12 col-lg-4">
-                <img class="img-fluid mb-3" src="images/veloEnfant/velo5.jpg" alt="velo5" title="Vélo Avengers" height="200" width="200">
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span class="star-1">  <i class="fas fa-star"></i></span>
-                </div>
-                <h4 class="p-name fw-bold text-uppercase">Vélo Avengers</h4>
-                <ul class="info-flex">
-                    <li>Vélo Avengers 12"</li>
-                    <li>Disney Noir Marve</li>
-                    <li>Pneus gonflables</li>
-                </ul>
-                
-                <h5 class="p-price fw-bold">Prix : 89.90 €</h5>
-                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
-                <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
-            </div>
-
-            <div class="product text-center col-12 col-lg-4">
-                <img class="img-fluid mb-3" src="images/veloEnfant/velo6.jpg" alt="velo6" title="Vélo Patrouille" height="200" width="200">
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span class="star-1">   <i class="fas fa-star"></i></span>
-                    <span class="star-1">   <i class="fas fa-star"></i></span>
-                </div>
-                <h4 class="p-name fw-bold text-uppercase">Vélo Patrouille</h4>
-                <ul class="info-flex">
-                    <li>Vélo enfant 10" Pat Patrouille</li>
-                    <li>Equipé de 2 stabilisateurs amovible</li>
-                    <li>Plaque avant décorative</li>
-                </ul>
-              
-                <h5 class="p-price fw-bold">Prix : 86.00 €</h5>
-                <button class="buy-btn"><i class="fas fa-shopping-cart"></i> Achat</button>
-                <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
-            </div>
-        </div>
-
-
-
-
-    </section>
-
-    <!-- Fin section enfants-->
-
-    <!-- Fin les cards -->
+        <!-- Fin les cards -->
     </main>
-    
+
     <aside>
         <!-- Comments section  -->
         <h2 class="text-center m-3 titre-avis"><strong>Ils ont RIDÉ OUR BIKES</strong> </h2>
         <hr class="mx-auto">
         <div class="container-fluid">
-                <!-- 1st comment  -->
-                <div class=" row comment-section bg-1">
-                    <div class="col-lg-2 col-sm-12 p-0">
-                        <img src="images/customers/rebecca-fox.jpg" height="200"  alt="image d'une femme sur un vélo">
-                    </div>
-                    <div class="col-lg-10 col-sm-12">
-                        <h6><strong>Rebecca Fox</strong></h6>
-                        <span class="fas fa-star comment-rate"></span>
-                        <span class="fas fa-star comment-rate"></span>
-                        <span class="fas fa-star comment-rate"></span>
-                        <span class="fas fa-star"></span>
-                        <span class="fas fa-star"></span>
-                        <p>Je suis fan du Cross Country. Ce vélo me convient totalement et me permet de m’aventurer sur des sentiers plus difficiles. Maniable et confortable, c’est un vélo excellent pour tous ceux qui cherche un vélo léger, sans sacrifier la durabilité.</p>
-                    </div>
+            <!-- 1st comment  -->
+            <div class=" row comment-section bg-1">
+                <div class="col-lg-2 col-sm-12 p-0">
+                    <img src="images/customers/rebecca-fox.jpg" height="200" alt="image d'une femme sur un vélo">
                 </div>
+                <div class="col-lg-10 col-sm-12">
+                    <h6><strong>Rebecca Fox</strong></h6>
+                    <span class="fas fa-star comment-rate"></span>
+                    <span class="fas fa-star comment-rate"></span>
+                    <span class="fas fa-star comment-rate"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <p>Je suis fan du Cross Country. Ce vélo me convient totalement et me permet de m’aventurer sur des
+                        sentiers plus difficiles. Maniable et confortable, c’est un vélo excellent pour tous ceux qui
+                        cherche un vélo léger, sans sacrifier la durabilité.</p>
+                </div>
+            </div>
             <!-- 1st comment  -->
             <!-- 2nd comment  -->
-                <div class=" row comment-section bg-2">
-                    <div class="col-lg-11 col-sm-12 ">
-                        <h6><strong>Jonas Vandermeiren</strong> </h6>
-                        <span class="fas fa-star comment-rate"></span>
-                        <span class="fas fa-star comment-rate "></span>
-                        <span class="fas fa-star comment-rate"></span>
-                        <span class="fas fa-star comment-rate"></span>
-                        <span class="fas fa-star"></span>
-                        <p>Un VTT semi-rigide qui offre un équipement haut de gamme, et un excellent confort grâce à son ergonomie adaptée. Ce vélo convient à tous les terrains, et procure des sensations inoubliables. Si vous cherchez un vélo rigide et résistant, adapté à l’anatomie masculine, qui offre de superbes performances sur tous les sentiers, avec un niveau d’équipement au top, vous allez adorer le BH Ultimate RC 7,5</p>
-                    </div>
-                    <div class="col-lg-1 col-sm-12 p-0 image-david ">
-                        <img src="images/customers/jonas-vandermeiren.jpg" height="200"
-                            alt="image d'un homme sur un vélo">
-                    </div>
-                </div>        
+            <div class=" row comment-section bg-2">
+                <div class="col-lg-11 col-sm-12 ">
+                    <h6><strong>Jonas Vandermeiren</strong> </h6>
+                    <span class="fas fa-star comment-rate"></span>
+                    <span class="fas fa-star comment-rate "></span>
+                    <span class="fas fa-star comment-rate"></span>
+                    <span class="fas fa-star comment-rate"></span>
+                    <span class="fas fa-star"></span>
+                    <p>Un VTT semi-rigide qui offre un équipement haut de gamme, et un excellent confort grâce à son
+                        ergonomie adaptée. Ce vélo convient à tous les terrains, et procure des sensations inoubliables.
+                        Si vous cherchez un vélo rigide et résistant, adapté à l’anatomie masculine, qui offre de
+                        superbes performances sur tous les sentiers, avec un niveau d’équipement au top, vous allez
+                        adorer le BH Ultimate RC 7,5</p>
+                </div>
+                <div class="col-lg-1 col-sm-12 p-0 image-david ">
+                    <img src="images/customers/jonas-vandermeiren.jpg" height="200" alt="image d'un homme sur un vélo">
+                </div>
+            </div>
             <!-- 2nd comment  -->
             <!-- 3rd comment  -->
-                <div class=" row comment-section bg-1">
-                    <div class="col-lg-2 col-sm-12 p-0">
-                        <img src="images/customers/helena-dos-santos.jpg" height="200"
-                            alt="image d'une femme sur un vélo">
-                    </div>
-                    <div class="col-lg-10 col-sm-12">
-                        <h6><strong>Hélèna Sanchez</strong></h6>
-                        <span class="fa fa-star comment-rate"></span>
-                        <span class="fa fa-star comment-rate"></span>
-                        <span class="fa fa-star comment-rate"></span>
-                        <span class="fa fa-star comment-rate"></span>
-                        <span class="fa fa-star comment-rate"></span>
-                        <p>El BH Ultimate RC 7.7 es un concentrado de versatilidad y calidad, que logra ofrecer lo mejor del XC sin dejar de ser ultra-versátil. Equipamiento de calidad, geometría adaptada al terreno técnico sin sacrificar la velocidad y atención al detalle que hacen felices a la mayoría de ciclistas con esta bicicleta. </p>
-                    </div>
+            <div class=" row comment-section bg-1">
+                <div class="col-lg-2 col-sm-12 p-0">
+                    <img src="images/customers/helena-dos-santos.jpg" height="200" alt="image d'une femme sur un vélo">
                 </div>
+                <div class="col-lg-10 col-sm-12">
+                    <h6><strong>Hélèna Sanchez</strong></h6>
+                    <span class="fa fa-star comment-rate"></span>
+                    <span class="fa fa-star comment-rate"></span>
+                    <span class="fa fa-star comment-rate"></span>
+                    <span class="fa fa-star comment-rate"></span>
+                    <span class="fa fa-star comment-rate"></span>
+                    <p>El BH Ultimate RC 7.7 es un concentrado de versatilidad y calidad, que logra ofrecer lo mejor del
+                        XC sin dejar de ser ultra-versátil. Equipamiento de calidad, geometría adaptada al terreno
+                        técnico sin sacrificar la velocidad y atención al detalle que hacen felices a la mayoría de
+                        ciclistas con esta bicicleta. </p>
+                </div>
+            </div>
             <!-- 3rd comment  -->
         </div>
         </div>
@@ -636,7 +659,10 @@
                     <h6 class="text-uppercase fw-bold mb-4">
                         <i class="fas fa-bicycle me-3 "></i>Let's bike
                     </h6>
-                    <p>Chez Let's Bike, nous partageons votre passion pour le cyclisme depuis plus de 110 ans, une passion toujours ravivée par notre volonté d'innover.. Toutes nos actions en ligne et hors ligne font preuve de notre expertise dans les milieux du cyclisme, du style de vie. Ce qui nous caractérise le plus d’ailleurs, c’est ce qui unit nous tous: l’amour pour la Bike.</p>
+                    <p>Chez Let's Bike, nous partageons votre passion pour le cyclisme depuis plus de 110 ans, une
+                        passion toujours ravivée par notre volonté d'innover.. Toutes nos actions en ligne et hors ligne
+                        font preuve de notre expertise dans les milieux du cyclisme, du style de vie. Ce qui nous
+                        caractérise le plus d’ailleurs, c’est ce qui unit nous tous: l’amour pour la Bike.</p>
                 </div>
                 <!--Infos -->
                 <div class="col-md-4 col-lg-4 ">
@@ -684,11 +710,48 @@
     </footer>
 
 
+    <!-- Modal window -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Les articles dans votre panier :</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">  
+                    <div class="products-container">                               
 
-    <!--Fichier js-->
-    <script src="js/script.js"></script>
+                    <table class="table">
+                        <thead class="product-header">
+                          <tr>
+                            <th scope="col" class="product-reference">Référence</th>
+                            <th scope="col" class="product-designation">Désignation</th>
+                            <th scope="col" classe="product-price">Prix(€)</th>
+                            <th scope="col" class="product-quantity">Quantité</th>
+                            <th scope="col" class="product-add">Ajouter</th>
+                            <th scope="col" class="product-remove">Retirer</th>
+                            <th scope="col" classe="product-price">Total(€)</th>
+                          </tr>
+                        </thead>
+                        <tbody class="products">                          
+                          
+                        
+                        </tbody>   
+                      </table>
+                    </div>  
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Poursuivre mes achats</button>
+                    <button type="button" class="btn btn-primary">Passer commande</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Fichier js-->
     <script src="js/script.js"></script>
 </body>
 
