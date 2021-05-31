@@ -248,6 +248,10 @@ displayCart();
 }
 
 //************************button acheter la commande *********************//
-document.getElementById("totalPrix").textContent= localStorage.getItem("totalCost");
+
+document.getElementById('button-modal').addEventListener('click', function(){
+    document.getElementById('totalPrix').textContent= localStorage.getItem('totalCost');
+})
+
  
 
