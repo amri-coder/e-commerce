@@ -229,12 +229,12 @@ a{
    
 }*/
 #totalPrixPara{
-    text-align: center;
+    
     font-weight: bolder;
-    /*color: #FFE484;*/
+    color: #FFE484;
    background-color: white;
     font-size:2rem ;
-    text-shadow: 1px 1px white, -1px -1px rgb(24, 4, 4)
+    
 }
 
 
