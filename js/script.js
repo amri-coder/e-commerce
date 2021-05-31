@@ -226,21 +226,18 @@ displayCart();
 
 //*****************le button pour vider entièrement  le panier***********//
 
-document.getElementById("modal-footer").addEventListener("click",restCard);
-
 
    
-    var button = document.querySelector('button');
-    button.addEventListener("click", restCard);
+    document.getElementById('delete').addEventListener("click", resetCart);
 
-    function restCard(){
+    function resetCart(){
     
     localStorage.removeItem("productsInCart");
     localStorage.removeItem("totalCost");
-    localStorage.removeItem("cartNumbers");
-    localStorage.setItem("cartNumbers",0);
-    document.querySelector('.cart .items-counter').textContent = 0;
+    //localStorage.removeItem("cartNumbers");
     
+    localStorage.setItem('cartNumbers',0);
+    document.querySelector('.cart .items-counter').textContent=0;
     
     
 
