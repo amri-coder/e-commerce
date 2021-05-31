@@ -67,8 +67,8 @@
                 <!-- Right elements -->
                 <div class="cart d-flex me-lg-3 order-1">
                     <!-- Icon -->
-                    <a href="#"><i class="fas fa-shopping-cart" data-bs-toggle="modal" data-bs-target="#exampleModal"></i><span
-                            class="items-counter ml-auto p-2">0</span>
+                    <a href="#"><i class="fas fa-shopping-cart" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"></i><span class="items-counter ml-auto p-2">0</span>
                     </a>
                 </div>
                 <!-- Right elements -->
@@ -709,44 +709,42 @@
         <!-- End Copyright -->
     </footer>
 
-
     <!-- Modal window -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+    <div class="modal fade bs-example-modal-lg"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" >
+            <div class="modal-content costumized-modal">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Les articles dans votre panier :</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title fw-bold" id="exampleModalLabel">Les articles dans votre panier :</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
                 </div>
-                <div class="modal-body">  
-                    <div class="products-container">                               
-
-                    <table class="table">
-                        <thead class="product-header">
-                          <tr>
-                            <th scope="col" class="product-reference">Référence</th>
-                            <th scope="col" class="product-designation">Désignation</th>
-                            <th scope="col" classe="product-price">Prix(€)</th>
-                            <th scope="col" class="product-quantity">Quantité</th>
-                            <th scope="col" class="product-add">Ajouter</th>
-                            <th scope="col" class="product-remove">Retirer</th>
-                            <th scope="col" classe="product-price">Total(€)</th>
-                          </tr>
-                        </thead>
-                        <tbody class="products">                          
-                          
-                        
-                        </tbody>   
-                      </table>
-                    </div>  
+                <div class="modal-body">
+                    <div class="products-container table-responsive">
+                        <table class="table table-hover table-borderless">
+                            <thead class="product-header">
+                                <tr class="text-center">
+                                    <th scope="col" class="product-reference">Référence</th>
+                                    <th scope="col" class="product-designation">Désignation</th>
+                                    <th scope="col" classe="product-price">Prix(€)</th>
+                                    <th scope="col" class="product-quantity">Quantité</th>
+                                    <th scope="col" class="product-add">Ajouter</th>
+                                    <th scope="col" class="product-remove">Retirer</th>
+                                    <th scope="col" class="product-price">Total(€)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="products">
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Poursuivre mes achats</button>
-                    <button type="button" class="btn btn-primary">Passer commande</button>
+                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">Poursuivre mes
+                        achats</button>
+                    <button type="button" class="btn btn-success">Passer la commande</button>
                 </div>
             </div>
         </div>
     </div>
+    <!-- End Modal window -->
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
