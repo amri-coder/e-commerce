@@ -224,3 +224,22 @@ function removeItem(e) {
 onLoadCartNumbers();
 displayCart();
 
+//*****************le button pour vider entièrement  le panier***********//
+
+document.getElementById("modal-footer").addEventListener("click",restCard);
+
+
+   
+    var button = document.querySelector('button');
+    button.addEventListener("click", restCard);
+
+    function restCard(){
+    
+    localStorage.removeItem("productsInCart");
+    localStorage.removeItem("totalCost");
+    localStorage.removeItem("cartNumbers");
+
+    displayCart();
+
+
+}

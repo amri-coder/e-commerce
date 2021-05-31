@@ -730,7 +730,7 @@
                             <th scope="col" class="product-quantity">Quantité</th>
                             <th scope="col" class="product-add">Ajouter</th>
                             <th scope="col" class="product-remove">Retirer</th>
-                            <th scope="col" classe="product-price">Total(€)</th>
+                            <th scope="col" class="product-price">Total(€)</th>
                           </tr>
                         </thead>
                         <tbody class="products">                          
@@ -740,9 +740,11 @@
                       </table>
                     </div>  
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer" id="modal-footer">
+                    <button type="button" class="btn btn-warning" id="delete" onclick="click();" style="color: white;">Vider le panier</button>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Poursuivre mes achats</button>
-                    <button type="button" class="btn btn-primary">Passer commande</button>
+                    <button type="button" class="btn btn-primary" >Passer commande</button>
+                    
                 </div>
             </div>
         </div>
