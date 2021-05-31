@@ -238,8 +238,10 @@ document.getElementById("modal-footer").addEventListener("click",restCard);
     localStorage.removeItem("productsInCart");
     localStorage.removeItem("totalCost");
     localStorage.removeItem("cartNumbers");
+    
 
     displayCart();
+    
 
 
 }
