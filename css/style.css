@@ -239,4 +239,18 @@ a{
 .costumized-modal table{
     color: #FFE484;
 }
+/*
+#exampleModalBuy{
+   
+}*/
+#totalPrixPara{
+    text-align: center;
+    font-weight: bolder;
+    color: #FFE484;
+   background-color: white;
+    font-size:2rem ;
+    
+}
+
+
 

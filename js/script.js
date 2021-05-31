@@ -247,4 +247,7 @@ displayCart();
 
 }
 
-//************************button passer la commande *********************//
+//************************button acheter la commande *********************//
+document.getElementById("totalPrix").textContent= localStorage.getItem("totalCost");
+ 
+
