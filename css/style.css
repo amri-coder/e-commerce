@@ -13,7 +13,22 @@
 }
 
 
+header .style-title h1{
+    color: #563D7C;
+    font-family: 'Fredericka the Great', cursive;
+    font-size:3.5rem ;
+    letter-spacing: 0.5rem;
+    text-shadow: #FFE484 1px 0 10px;
+    
+}
+header .style-title p{
+    color:#563D7C ;
+}
+
+
 /*---- Navbar ---- */
+
+
 header #navbar-custom{
     background-color: #563D7C;
 }
@@ -214,7 +229,7 @@ a{
 #exampleModalBuy {
 
 /*******************
-        MODEL
+ MODAL WINDOW - CART
 *******************/
 
 .costumized-modal{
