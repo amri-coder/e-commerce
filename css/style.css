@@ -18,9 +18,9 @@ header .style-title h1{
     font-family: 'Fredericka the Great', cursive;
     font-size:3.5rem ;
     letter-spacing: 0.5rem;
-    text-shadow: #FFE484 1px 0 10px;
-    
+    text-shadow: #FFE484 1px 0 10px;    
 }
+
 header .style-title p{
     color:#563D7C ;
 }
@@ -252,5 +252,7 @@ a{
     
 }
 
-
+.table-hover tbody tr:hover td {
+    color: #FFE484;    
+}
 

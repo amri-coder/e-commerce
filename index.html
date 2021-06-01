@@ -8,7 +8,6 @@
     <!-- Favicon -->
     <link rel="icon" href="images/icon/favi.png" />
     <title>Let's Bike - Home</title>
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
     <!-- Font awesome -->
@@ -17,16 +16,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@200&display=swap" rel="stylesheet">
-
-    <!-- Mon fichier css-->
+    <!-- Personal css-->
     <link rel="stylesheet" href="css/style.css">
-
-
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- ======================================= HEADER ========================================= -->
     <header id="header-top">
+        <!-- Main title and slogan -->
         <div class="style-title text-center m-5 ">
             <h1><em>LET'S BIKE!</h1>
             <p class="fs-3 text">Les Feet on the pedals et le Head in the clouds</p></em>
@@ -40,7 +37,6 @@
                     <a class="navbar-brand mt-lg-0 fst-italic" href="#header-top"><img class="my-0"
                             src="images/logo.png" alt="logo" height="50px" width="50px">Let's Bike!</a>
                 </div>
-
                 <!-- Toggle button -->
                 <div class="menu-burger order-1">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -48,11 +44,9 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
-
                 <!-- Collapsible wrapper -->
                 <div id="navbarNav" class="collapse navbar-collapse order-2 order-md-1">
-
-                    <!-- links -->
+                    <!-- Nav links -->
                     <ul class="navbar-nav fs-4 me-auto mb-2 mb-lg-0 categories text-center">
                         <li class="nav-item displayed my-1">
                             <a class="btn btn ms-lg-5 mx-3 " href="#velos-homme">Vélos Homme</a>
@@ -64,25 +58,26 @@
                             <a class="btn btn mx-3" href="#velos-enfant">Vélos Enfant</a>
                         </li>
                     </ul>
-                    <!-- links -->
+                    <!-- End of nav links -->
                 </div>
-                <!-- Collapsible wrapper -->
+                <!-- End of collapsible wrapper -->
 
-                <!-- Right elements -->
+                <!-- Cart -->
                 <div class="cart d-flex me-lg-3 order-1">
-                    <!-- Icon -->
+                    <!-- Cart icon and link to the modal window -->
                     <a href="#"><i class="fas fa-shopping-cart" data-bs-toggle="modal"
                             data-bs-target="#exampleModal"></i><span class="items-counter ml-auto p-2">0</span>
                     </a>
                 </div>
-                <!-- Right elements -->
+                <!-- End of cart -->
             </div>
             <!-- Container wrapper -->
         </nav>
         <!-- Navbar -->
     </header class="mb-5">
+    <!-- ======================================= END OF HEADER ========================================= -->
 
-    <!-- Carousel -->
+    <!-- ============ Carousel ========= -->
     <section id="carousel">
         <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -97,28 +92,24 @@
                 <div class="carousel-item active">
                     <img src="images/carousel/carousel1.jpeg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Grimpez au plus haut sommet</h5>
-                        <p></p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="images/carousel/carousel2.jpeg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Traversez sans effort</h5>
-                        <p></p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="images/carousel/carousel3.jpeg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Partagez un chemin</h5>
-                        <p></p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Les cards Section -->
+    <!-- ============ End of carousel ========= -->
+
+    <!-- ============================================ MAIN SECTION WITH CARDS ================================ -->
 
     <!-- Les cards Vélo pour Homme -->
     <main class="categories">
@@ -156,15 +147,12 @@
                         </li>
                     </ul>
                     <h5 class="p-price fw-bold">Prix : 322.00 €</h5>
-                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModalBuy"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                            class="fas fa-shopping-cart"></i> Achat</button>
                     <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
                 </div>
 
-
-
                 <div id="1" class="product col-12 col-lg-4 text-center">
-
-
                     <img class="img-fluid mb-3" src="images/veloHomme/velo2.jpg" alt="velo2"
                         title="Vélo de ville touring" height="200" width="200">
                     <div class="star">
@@ -182,12 +170,10 @@
                     </ul>
 
                     <h5 class="p-price fw-bold">Prix : 100.00 €</h5>
-                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModalBuy"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                            class="fas fa-shopping-cart"></i> Achat</button>
                     <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
                 </div>
-
-
-
 
 
                 <div id="2" class="product text-center col-12 col-lg-4">
@@ -209,7 +195,8 @@
                     </ul>
 
                     <h5 class="p-price fw-bold">Prix : 250.00 €</h5>
-                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModalBuy"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                            class="fas fa-shopping-cart"></i> Achat</button>
                     <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
                 </div>
 
@@ -233,7 +220,8 @@
                     </ul>
 
                     <h5 class="p-price fw-bold">Prix : 119.00 €</h5>
-                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModalBuy"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                            class="fas fa-shopping-cart"></i> Achat</button>
                     <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
                 </div>
 
@@ -254,7 +242,8 @@
                         <li>Shimano à 21 vitesses</li>
                     </ul>
                     <h5 class="p-price fw-bold">Prix : 499.00 €</h5>
-                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModalBuy"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                            class="fas fa-shopping-cart"></i> Achat</button>
                     <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
                 </div>
 
@@ -275,7 +264,8 @@
                         <li>Jantes en aluminium</li>
                     </ul>
                     <h5 class="p-price fw-bold">Prix : 281.00 €</h5>
-                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModalBuy"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                            class="fas fa-shopping-cart"></i> Achat</button>
                     <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
                 </div>
             </div>
@@ -311,11 +301,10 @@
                     </ul>
 
                     <h5 class="p-price fw-bold">Prix : 199.90 €</h5>
-                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModalBuy"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                            class="fas fa-shopping-cart"></i> Achat</button>
                     <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
                 </div>
-
-
 
                 <div id="7" class="product text-center col-12 col-lg-4">
                     <img class="img-fluid mb-3" src="images/veloFemme/velo2.jpg" alt="velo2" title="VTC Vélo de ville"
@@ -334,11 +323,10 @@
                         <li>Vélo de Confort Retro, Marron</li>
                     </ul>
                     <h5 class="p-price fw-bold">Prix : 337.90 €</h5>
-                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModalBuy"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                            class="fas fa-shopping-cart"></i> Achat</button>
                     <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
                 </div>
-
-
 
                 <div id="8" class="product text-center col-12 col-lg-4">
                     <img class="img-fluid mb-3" src="images/veloFemme/velo3.jpg" alt="velo3"
@@ -381,7 +369,8 @@
                     </ul>
 
                     <h5 class="p-price fw-bold">Prix : 849.99 €</h5>
-                    <button class="buy-btn"data-bs-toggle="modal" data-bs-target="#exampleModalBuy"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModalBuy"><i
+                            class="fas fa-shopping-cart"></i> Achat</button>
                     <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
                 </div>
 
@@ -403,7 +392,8 @@
                     </ul>
 
                     <h5 class="p-price fw-bold">Prix : 1129.99 €</h5>
-                    <button class="buy-btn"data-bs-toggle="modal" data-bs-target="#exampleModalBuy"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                            class="fas fa-shopping-cart"></i> Achat</button>
                     <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
                 </div>
 
@@ -425,7 +415,8 @@
                     </ul>
 
                     <h5 class="p-price fw-bold">Prix : 181.00 €</h5>
-                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModalBuy"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                            class="fas fa-shopping-cart"></i> Achat</button>
                     <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
                 </div>
             </div>
@@ -461,7 +452,8 @@
                         <li>Classique, sans jante</li>
                     </ul>
                     <h5 class="p-price fw-bold">Prix : 64.99 €</h5>
-                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModalBuy"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                            class="fas fa-shopping-cart"></i> Achat</button>
                     <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
                 </div>
 
@@ -485,11 +477,10 @@
                     </ul>
 
                     <h5 class="p-price fw-bold">Prix : 119.99 €</h5>
-                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModalBuy"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                            class="fas fa-shopping-cart"></i> Achat</button>
                     <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
                 </div>
-
-
 
                 <div id="14" class="product text-center col-12 col-lg-4">
                     <img class="img-fluid mb-3" src="images/veloEnfant/velo3.jpg" alt="velo3" title="Vélo Volcano"
@@ -509,7 +500,8 @@
                     </ul>
 
                     <h5 class="p-price fw-bold">Prix : 106.00 €</h5>
-                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModalBuy"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                            class="fas fa-shopping-cart"></i> Achat</button>
                     <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
                 </div>
 
@@ -532,7 +524,8 @@
                     </ul>
 
                     <h5 class="p-price fw-bold">Prix : 100.99 €</h5>
-                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModalBuy"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                            class="fas fa-shopping-cart"></i> Achat</button>
                     <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
                 </div>
 
@@ -554,7 +547,8 @@
                     </ul>
 
                     <h5 class="p-price fw-bold">Prix : 89.90 €</h5>
-                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModalBuy"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                            class="fas fa-shopping-cart"></i> Achat</button>
                     <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
                 </div>
 
@@ -576,18 +570,17 @@
                     </ul>
 
                     <h5 class="p-price fw-bold">Prix : 86.00 €</h5>
-                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModalBuy"><i class="fas fa-shopping-cart"></i> Achat</button>
+                    <button class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                            class="fas fa-shopping-cart"></i> Achat</button>
                     <button class="get-btn"><i class="fas fa-shopping-basket"></i> Ajouter au panier</button>
                 </div>
             </div>
-
         </section>
-
         <!-- Fin section enfants-->
-
-        <!-- Fin les cards -->
     </main>
+    <!-- ============================================ END OF MAIN SECTION WITH CARDS ================================ -->
 
+    <!-- ============================================ CLIENTS' REVIEWS ============================================= -->
     <aside>
         <!-- Comments section  -->
         <h2 class="text-center m-3 titre-avis"><strong>Ils ont RIDÉ OUR BIKES</strong> </h2>
@@ -654,7 +647,9 @@
         </div>
         <!-- Comments section -->
     </aside>
-    <!-- Footer -->
+    <!-- ============================================ END OF CLIENTS' REVIEWS ============================================= -->
+
+    <!-- ====================================================== FOOTER ======================================================= -->
     <footer class="pt-1 mt-5 text-white">
         <!-- Row section -->
         <div class="container text-md-start ">
@@ -712,115 +707,119 @@
         </div>
         <!-- End Copyright -->
     </footer>
+    <!-- ====================================================== END OF FOOTER ======================================================= -->
 
-
-    <!-- Modal Window button paiement -->
-
-    <div class="modal fade" id="exampleModalBuy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 1600;">
+    <!-- ===== Modal Window attached to payment button ===== -->
+    <div class="modal fade" id="exampleModalBuy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        style="z-index: 1600;">
         <div class="modal-dialog">
-          <div class="modal-content costumized-modal">
-            <div class="modal-header">
-              <h5 class="modal-title fw-bold" id="exampleModalLabel">Paiement sécurisé</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form id=paiement>
-                    <fieldset>
-                      <legend>Votre identité</legend>
-                  
-                      <ol>
-                        <li>
-                          <label for="nom">Nom </label>
-                          <input id="nom" name="nom" type="text" placeholder="Prénom et nom" required autofocus>
-                        </li>
-                        <li>
-                          <label for="email">Email </label>
-                          <input id="email" name="email" type="email" placeholder="exemple@domaine.com" required>
-                        </li>
-                        <li>
-                          <label for="telephone">Téléphone </label>
-                          <input id="telephone" name="telephone" type="tel" placeholder="par ex&nbsp;: +3375500000000" required>
-                        </li>
-                      </ol>
-                    </fieldset>
-                  
-                    <fieldset>
-                      <legend>Adresse de livraison</legend>
-                        <ol>
-                          <li>
-                            <label for="adresse">Adresse</label>
-                            <textarea id="adresse" name="adresse" rows="5" required></textarea>
-                          </li>
-                          <li>
-                            <label for="codepostal">Code postal</label>
-                            <input id="codepostal" name="codepostal" type="text" required>
-                          </li>
-                            <li>
-                            <label for="pays">Pays</label>
-                            <input id="pays" name="pays" type="text" required>
-                          </li>
-                        </ol>
-                      </fieldset>
-                      <fieldset>
-                      
-                          <p id="totalPrixPara">Le total est : <span id="totalPrix"></span> €</p>
-                 
-                      </fieldset>
-                    <fieldset>
-                      <legend>Informations CB</legend>
-                      <ol>
-                        <li>
-                          <fieldset>
-                            <legend>Type de carte bancaire</legend>
+            <div class="modal-content costumized-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="exampleModalLabel">Paiement sécurisé</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id=paiement>
+                        <fieldset>
+                            <legend>Votre identité</legend>
+
                             <ol>
-                              <li>
-                                <input id="visa" name="type_de_carte" type="radio">
-                                <label for="visa">VISA</label>
-                              </li>
-                              <li>
-                                <input id="amex" name="type_de_carte" type="radio">
-                                <label for="amex">AmEx</label>
-                              </li>
-                              <li>
-                                <input id="mastercard" name="type_de_carte" type="radio">
-                                <label for="mastercard">Mastercard</label>
-                              </li>
+                                <li>
+                                    <label for="nom">Nom </label>
+                                    <input id="nom" name="nom" type="text" placeholder="Prénom et nom" required
+                                        autofocus>
+                                </li>
+                                <li>
+                                    <label for="email">Email </label>
+                                    <input id="email" name="email" type="email" placeholder="exemple@domaine.com"
+                                        required>
+                                </li>
+                                <li>
+                                    <label for="telephone">Téléphone </label>
+                                    <input id="telephone" name="telephone" type="tel"
+                                        placeholder="par ex&nbsp;: +3375500000000" required>
+                                </li>
                             </ol>
-                          </fieldset>
-                        </li>
-                        <li>
-                          <label for="numero_de_carte">N° de carte</label>
-                          <input id="numero_de_carte" name="numero_de_carte" type="number" required>
-                        </li>
-                        <li>
-                            <label for="securite">Date de validité</label>
-                            <input id="securite" name="securite" type="date" required>
-                          </li>
-                        <li>
-                          <label for="securite">Code sécurité</label>
-                          <input id="securite" name="securite" type="number" required>
-                        </li>
-                        <li>
-                          <label for="nom_porteur">Nom du porteur</label>
-                          <input id="nom_porteur" name="nom_porteur" type="text" placeholder="Même nom que sur la carte" required>
-                        </li>
-                      </ol>
-                    </fieldset>
-                  
-                  </form>
-              
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Adresse de livraison</legend>
+                            <ol>
+                                <li>
+                                    <label for="adresse">Adresse</label>
+                                    <textarea id="adresse" name="adresse" rows="5" required></textarea>
+                                </li>
+                                <li>
+                                    <label for="codepostal">Code postal</label>
+                                    <input id="codepostal" name="codepostal" type="text" required>
+                                </li>
+                                <li>
+                                    <label for="pays">Pays</label>
+                                    <input id="pays" name="pays" type="text" required>
+                                </li>
+                            </ol>
+                        </fieldset>
+                        <fieldset>
+
+                            <p id="totalPrixPara">Le total est : <span id="totalPrix"></span> €</p>
+
+                        </fieldset>
+                        <fieldset>
+                            <legend>Informations CB</legend>
+                            <ol>
+                                <li>
+                                    <fieldset>
+                                        <legend>Type de carte bancaire</legend>
+                                        <ol>
+                                            <li>
+                                                <input id="visa" name="type_de_carte" type="radio">
+                                                <label for="visa">VISA</label>
+                                            </li>
+                                            <li>
+                                                <input id="amex" name="type_de_carte" type="radio">
+                                                <label for="amex">AmEx</label>
+                                            </li>
+                                            <li>
+                                                <input id="mastercard" name="type_de_carte" type="radio">
+                                                <label for="mastercard">Mastercard</label>
+                                            </li>
+                                        </ol>
+                                    </fieldset>
+                                </li>
+                                <li>
+                                    <label for="numero_de_carte">N° de carte</label>
+                                    <input id="numero_de_carte" name="numero_de_carte" type="number" required>
+                                </li>
+                                <li>
+                                    <label for="securite">Date de validité</label>
+                                    <input id="securite" name="securite" type="date" required>
+                                </li>
+                                <li>
+                                    <label for="securite">Code sécurité</label>
+                                    <input id="securite" name="securite" type="number" required>
+                                </li>
+                                <li>
+                                    <label for="nom_porteur">Nom du porteur</label>
+                                    <input id="nom_porteur" name="nom_porteur" type="text"
+                                        placeholder="Même nom que sur la carte" required>
+                                </li>
+                            </ol>
+                        </fieldset>
+
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-primary">J'achète !</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler !</button>
+                </div>
             </div>
-            <div class="modal-footer">
-              
-              <button type="button" class="btn btn-primary">J'achète !</button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler !</button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
+    <!-- ===== End of Modal Window attached to payment button ===== -->
 
-
-    <!-- Modal window -->
+    <!-- ======================= Cart's Modal Window ================ -->
     <div class="modal fade bs-example-modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -852,25 +851,18 @@
                     <button type="button" class="btn btn-warning" id="delete" onclick="click()">Vider le panier</button>
                     <button type="button" class="btn btn-info" data-bs-dismiss="modal">Poursuivre mes
                         achats</button>
-                    <button type="button" id="button-modal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalBuy">Passer la commande</button>
+                    <button type="button" id="button-modal" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalBuy">Passer la commande</button>
 
                 </div>
-
-                
-               
             </div>
         </div>
     </div>
-    <!-- End Modal window -->
+    <!-- ======================= End of Cart's Modal Window ================ -->
 
-   
-
-  
-
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-    <!--Fichier js-->
+    <!-- JS script -->
     <script src="js/script.js"></script>
 </body>
 
