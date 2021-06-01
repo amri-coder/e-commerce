@@ -114,25 +114,26 @@ function addToJson(product) {
     // Get local storage JSON.
     let productsInCart = localStorage.getItem('productsInCart');
     // Convert the JSON into a JS object.
-    productsInCart = JSON.parse(productsInCart);  
+    productsInCart = JSON.parse(productsInCart);     
+
     // Check if JSON exists.
-    if (productsInCart != null) {       
-        // Check with the id of the product if it is already in the cart.           
-        if (productsInCart[product.id] == undefined) {
+    if (productsInCart != null) {      
+        // Check with the id of the product if it is already in the cart.              
+        if (productsInCart[product.id] == undefined) {          
             productsInCart = {
                 ...productsInCart,
-                [product.id]: product
-            };            
+                [product.id]: product                
+            };                                     
         }          
         // If there is at least one same type of product, add 1 to product's inCart value.
-        productsInCart[product.id].inCart = parseInt(productsInCart[product.id].inCart) + 1;
-                
+        productsInCart[product.id].inCart = parseInt(productsInCart[product.id].inCart) + 1;           
+       
     // If the cart is empty.
-    } else {         
-        product.inCart = 1;
+    } else {      
+        product.inCart = 1;  
         productsInCart = {
             [product.id]: product
-        }
+        }; 
     }
     // Convert into JSON.
     localStorage.setItem('productsInCart', JSON.stringify(productsInCart));
@@ -237,7 +238,7 @@ function removeItem(e) {
     // Update local storage variables and parse JSON file.
     let productsQuantity = localStorage.getItem('cartCounter');
     let cartCost = localStorage.getItem('totalCost');
-    let productsInCart = localStorage.getItem('productsInCart');
+    let productsInCart = localStorage.getItem('productsInCart');    
     productsInCart = JSON.parse(productsInCart);
 
     // Remove item from cart if there is at least one.
@@ -247,25 +248,28 @@ function removeItem(e) {
         // Remove one unit from the cart counter on the index page.
         document.querySelector('.cart .items-counter').textContent = productsQuantity - 1;
         // If there is at least one same type of product, remove one from inCart.       
-        productsInCart[product.id].inCart = parseInt(productsInCart[product.id].inCart) - 1;
-        if(productsInCart[product.id].inCart == 0){
+        productsInCart[product.id].inCart = parseInt(productsInCart[product.id].inCart) - 1;        
+              
+        // Delete item from productsInCart if inCart property equals 0. 
+        if(productsInCart[product.id].inCart == 0){ 
+            product.inCart = 0;                       
             delete productsInCart[product.id];
-        }    
+        } 
+        
         // Convert into JSON.
-        localStorage.setItem('productsInCart', JSON.stringify(productsInCart));          
+        localStorage.setItem('productsInCart', JSON.stringify(productsInCart));
 
         // Manage the total.
         if (cartCost != null) {            
             cartCost = parseFloat(cartCost);
-            cartCost -=  parseFloat(product.price);
+            cartCost -= parseFloat(product.price);
             cartCost = cartCost.toFixed(2);
             localStorage.setItem('totalCost', cartCost);
         }
 
         // Remove variable productsInCart from localStorage.
         if (productsQuantity == 1) {            
-          // localStorage.setItem('productsInCart', undefined); 
-          localStorage.clear();
+            localStorage.clear();
         }  
         
     }
