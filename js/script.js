@@ -126,7 +126,7 @@ function addToJson(product) {
             };                                     
         }          
         // If there is at least one same type of product, add 1 to product's inCart value.
-        productsInCart[product.id].inCart = parseInt(productsInCart[product.id].inCart) + 1;           
+        productsInCart[product.id].inCart = parseInt(productsInCart[product.id].inCart) + 1;                
        
     // If the cart is empty.
     } else {      
@@ -137,6 +137,9 @@ function addToJson(product) {
     }
     // Convert into JSON.
     localStorage.setItem('productsInCart', JSON.stringify(productsInCart));
+
+    // réinitialisation product.inCart
+    product.inCart = 0;
 }
 
 /**
@@ -251,8 +254,7 @@ function removeItem(e) {
         productsInCart[product.id].inCart = parseInt(productsInCart[product.id].inCart) - 1;        
               
         // Delete item from productsInCart if inCart property equals 0. 
-        if(productsInCart[product.id].inCart == 0){ 
-            product.inCart = 0;                       
+        if(productsInCart[product.id].inCart == 0){                                 
             delete productsInCart[product.id];
         } 
         
